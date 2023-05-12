@@ -23,7 +23,7 @@ for line in it:
     real_cmd = cmd[2:].strip()
     out += cmd
 
-    print("Running: " + real_cmd)
+    print(f"Running: {real_cmd}")
     out += subprocess.check_output(real_cmd, shell=True)
 
     # Skip pre-existing command output.
